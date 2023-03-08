@@ -18,7 +18,7 @@
             <p class="titre">Auberge du jacana africain</p>
         </a>
         <!-- Ajouter un menu : Accueil, Historique, Région, Contact, Réservation -->
-        <p> <a href="../index.html">accueil</a> | <a href="index.html">réservation</a>
+        <p> <a href="../index.html">accueil</a> | <a href="../index.html">historique</a> | <a href="../index.html">région</a> |  <a href="index.html">réservation</a> | <a href="../index.html">contact</a>
     </header>
 
     <main>
@@ -191,21 +191,42 @@
                 <p class="disponibilite__check"><button type="button" id="check-availability-button">Vérifier la
                         disponibilité</button></p>
                 <p id="availability-message"></p>
+                <p class="erreur">
+                    <span>
+                        <span class="screen-reader-only">Avertissement</span>
+                        <span class="icone icone--erreur" aria-hidden="true"></span>
+                    </span>
+                    Message d'erreur par JavaScript
+                </p>
 
 
             </fieldset>
 
 
 
-            <fieldset>
+            <fieldset class="ctnValidation">
                 <legend>
                     <h2>2. Nombre de personnes </h2>
                 </legend>
                 <label for="adultes">Adultes (maximum 4):</label>
                 <input type="number" min="1" max="4" id="adultes" name="adultes" required>
+                <p class="erreur">
+                    <span>
+                        <span class="screen-reader-only">Avertissement</span>
+                        <span class="icone icone--erreur" aria-hidden="true"></span>
+                    </span>
+                    Message d'erreur par JavaScript
+                </p>
 
                 <label for="enfants">Enfants (maximum 5):</label>
                 <input type="number" min="1" max="5" id="enfants" name="enfants" required>
+                <p class="erreur">
+                    <span>
+                        <span class="screen-reader-only">Avertissement</span>
+                        <span class="icone icone--erreur" aria-hidden="true"></span>
+                    </span>
+                    Message d'erreur par JavaScript
+                </p>
 
                 <p>
                     Notes: <br>
@@ -216,7 +237,7 @@
 
 
 
-            <fieldset>
+            <fieldset class="ctnValidation types_chambre">
                 <legend>
                     <h2>3. Choix chambre et forfait </h2>
                 </legend>
@@ -227,22 +248,22 @@
                     <li>
                         <input type="radio" name="chambre" id="1_lit_double" value="1_lit_double" class="screen-reader-only" required>
                         <label for="1_lit_double">
-                            <img src="images/1-lit-double.jpg" alt="">
-                            <span class="produit">1 lit double</span>
+                            <img src="../images/types-de-chambre/1-lit-double.jpg" alt="">
+                            <span class="lit">1 lit double</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="chambre" id="2_lits_doubles" value="2_lits_doubles" class="screen-reader-only">
                         <label for="2_lits_doubles">
-                            <img src="images/2-lits-double.jpg" alt="">
-                            <span class="produit">2 lits doubles</span>
+                            <img src="../images/types-de-chambre/2-lits-double.jpg" alt="">
+                            <span class="lit">2 lits doubles</span>
                         </label>
                     </li>
                     <li>
                         <input type="radio" name="chambre" id="familiale" value="familiale" class="screen-reader-only">
                         <label for="familiale">
-                            <img src="images/chambre-familiale.jpg" alt="">
-                            <span class="produit">Chambre familiale</span>
+                            <img src="../images/types-de-chambre/chambre-familiale.jpg" alt="">
+                            <span class="lit">Chambre familiale</span>
                         </label>
                     </li>
                 </ul>
@@ -269,17 +290,50 @@
                 <legend>
                     <h2>4. Identification</h2>
                 </legend>
+                <div class="ctnValidation">
                 <label for="prenom">Prénom :</label>
                 <input id="prenom" name="prenom" required>
-
+                <p class="erreur">
+                    <span>
+                        <span class="screen-reader-only">Avertissement</span>
+                        <span class="icone icone--erreur" aria-hidden="true"></span>
+                    </span>
+                    Message d'erreur par JavaScript
+                </p>
+                </div>
+                <div class="ctnValidation">
                 <label for="nom">Nom :</label>
                 <input id="nom" name="nom" required>
-
+                <p class="erreur">
+                    <span>
+                        <span class="screen-reader-only">Avertissement</span>
+                        <span class="icone icone--erreur" aria-hidden="true"></span>
+                    </span>
+                    Message d'erreur par JavaScript
+                </p>
+                </div>
+                <div class="ctnValidation">
                 <label for="email">Email :</label>
                 <input id="email" name="email" required>
-
+                <p class="erreur">
+                    <span>
+                        <span class="screen-reader-only">Avertissement</span>
+                        <span class="icone icone--erreur" aria-hidden="true"></span>
+                    </span>
+                    Message d'erreur par JavaScript
+                </p>
+                </div>
+                <div class="ctnValidation">
                 <label for="telephone">Téléphone :</label>
                 <input id="telephone" name="telephone" required>
+                <p class="erreur">
+                    <span>
+                        <span class="screen-reader-only">Avertissement</span>
+                        <span class="icone icone--erreur" aria-hidden="true"></span>
+                    </span>
+                    Message d'erreur par JavaScript
+                </p>
+                </div>
             </fieldset>
 
 

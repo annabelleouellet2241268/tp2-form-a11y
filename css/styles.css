@@ -1,12 +1,14 @@
 @charset "UTF-8";
 
-/* @import url(normalize.css); */
-/* @import url(utilitaires.css); */
+@import url(normalize.css);
+@import url(utilitaires.css); 
+
 
 
 /* ajouter une table des matières ici */
-
-
+/* Dates arrivée et départ
+/* Interactivité boutons radio */
+/* Label des boutons radio
 /* Dates arrivée et départ */
 .disponibilite__dates {
     display: flex;
@@ -38,4 +40,37 @@
 .disponibilite .disponibilite__check {
     margin-top: 1rem;
     margin-left: 14px;
+}
+
+/*** Label des boutons radio ***/
+/* le sélecteur met à profit
+le fait que le label est consécutif
+au input (cas des boutons radio et des cases à cocher)
+ */
+ .types_chambre ul{
+    list-style: none;
+ }
+ input[type=radio]+label {
+    display: inline-block;
+    text-align: center;
+    border: 2px solid transparent;
+}
+
+/* Interactivité boutons radio */
+[type=radio]:hover+label {
+    cursor: pointer;
+}
+
+[type=radio]:hover+label,
+[type=radio]:focus+label {
+    border: 2px solid #09c231;
+}
+
+[type=radio]:checked+label {
+    border: 2px solid #068221;
+}
+
+/* Position du span aux boutons radio */
+.lit {
+    display:block;
 }
