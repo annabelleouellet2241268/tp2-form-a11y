@@ -222,8 +222,39 @@
 
                 <!-- Trois boutons radio pour le choix du type de chambre simple, double ou familiale 
                 Les boutons doivent être des images cliquables: utiliser images/types-de-chambre -->
+                <ul class="rangee">
+                    <li>
+                        <input type="radio" name="chambre" id="1_lit_double" value="1_lit_double" class="screen-reader-only" required>
+                        <label for="1_lit_double">
+                            <img src="images/1-lit-double.jpg" alt="">
+                            <span class="produit">1 lit double</span>
+                        </label>
+                    </li>
+                    <li>
+                        <input type="radio" name="chambre" id="2_lits_doubles" value="2_lits_doubles" class="screen-reader-only">
+                        <label for="2_lits_doubles">
+                            <img src="images/2-lits-double.jpg" alt="">
+                            <span class="produit">2 lits doubles</span>
+                        </label>
+                    </li>
+                    <li>
+                        <input type="radio" name="chambre" id="familiale" value="familiale" class="screen-reader-only">
+                        <label for="familiale">
+                            <img src="images/chambre-familiale.jpg" alt="">
+                            <span class="produit">Chambre familiale</span>
+                        </label>
+                    </li>
+                </ul>
+                <p class="erreur">
+                    <span>
+                        <span class="screen-reader-only">Avertissement</span>
+                        <span class="icone icone--erreur" aria-hidden="true"></span>
+                    </span>
+                    Message d'erreur par JavaScript
+                </p>
 
                 <!-- [case à cocher] Inclure le petit déjeuner s'il-vous-plaît -->
+                
 
                 <p> Le coût du petit déjeûner des adultes est de 25$ CAN, pour les enfants de moins de 12 ans c'est
                     12.50$
