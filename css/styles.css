@@ -7,8 +7,11 @@
 
 /* ajouter une table des matières ici */
 /* Dates arrivée et départ
-/* Interactivité boutons radio */
+/* Interactivité boutons radio
 /* Label des boutons radio
+/* Position du span aux boutons radio
+/* Alignement 
+
 /* Dates arrivée et départ */
 .disponibilite__dates {
     display: flex;
@@ -72,5 +75,21 @@ au input (cas des boutons radio et des cases à cocher)
 
 /* Position du span aux boutons radio */
 .lit {
+    display:block;
+}
+
+/* Alignement */
+.formulaire {
+    margin: 0 25px;
+    max-width: 600px;
+}
+.aside {
+    margin: 0 25px;
+}
+.footer {
+    margin: 0 25px;
+    text-align: center;
+}
+.identification label{
     display:block;
 }
